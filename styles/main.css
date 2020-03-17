@@ -495,7 +495,12 @@ li {
     width: 180px;
     margin: 40px;
     border-radius: 16px;
-    overflow: hidden; }
+    overflow: hidden;
+    outline: none; }
+    .expertise__img-link:focus {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+      border: 1px solid #c0cdd7; }
     @media screen and (max-width: 1024px) {
       .expertise__img-link {
         height: 160px;
@@ -632,7 +637,8 @@ li {
   font-size: 15px;
   text-decoration: none;
   line-height: 22px;
-  color: #334563; }
+  color: #334563;
+  outline: none; }
   .step__link::before {
     content: "";
     height: 40px;
