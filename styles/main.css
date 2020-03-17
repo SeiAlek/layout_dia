@@ -63,11 +63,6 @@ li {
     height: 120px;
     padding: 4px 0 0;
     z-index: 120; }
-    @media screen and (max-width: 1024px) {
-      .header__row {
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between; } }
     @media screen and (max-width: 767px) {
       .header__row {
         height: 60px; } }
@@ -125,7 +120,8 @@ li {
         background-color: #2060f6;
         border-radius: 0 0 30px 30px;
         -webkit-transform: translateY(-100%);
-                transform: translateY(-100%); } }
+                transform: translateY(-100%);
+        z-index: -1; } }
   @media screen and (max-width: 1024px) and (max-width: 767px) {
     .header__nav {
       border-radius: 0 0 30px; } }
@@ -877,6 +873,8 @@ li {
 .container {
   max-width: 1600px;
   min-width: 320px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */
