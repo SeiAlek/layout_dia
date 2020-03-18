@@ -551,7 +551,7 @@ li {
       padding: 72px 48px; } }
   @media screen and (max-width: 767px) {
     .expertise {
-      padding: 48px 24px; } }
+      padding: 48px 0; } }
   .expertise__header {
     text-align: center; }
     @media screen and (max-width: 767px) {
@@ -739,7 +739,8 @@ li {
     transition: transform 0.3s, -webkit-transform 0.3s; }
   .step__link::after {
     content: "Learn more";
-    grid-row: 3; }
+    grid-row: 3;
+    white-space: nowrap; }
   .step__link:hover, .step__link:focus {
     -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
             box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); }
@@ -844,12 +845,12 @@ li {
           border-radius: 32px 32px 0 0; } }
       @media screen and (max-width: 1280px) {
         .approach__column--empty {
-          margin-top: 0;
           margin-right: -68px; } }
       @media screen and (max-width: 1024px) {
         .approach__column--empty {
           grid-column: 2;
-          grid-row: 2; } }
+          grid-row: 2;
+          margin-top: 0; } }
       @media screen and (max-width: 767px) {
         .approach__column--empty {
           grid-column: 1;
