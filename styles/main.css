@@ -81,6 +81,9 @@ li {
   background-color: #2c2c2c;
   z-index: 1; }
 
+.page__overflow-hidden {
+  overflow: hidden; }
+
 .header {
   position: relative;
   background-color: #2c2c2c;
@@ -981,6 +984,9 @@ li {
   padding: 200px 0;
   text-align: center;
   overflow: hidden; }
+  @media screen and (max-width: 1024px) {
+    .vision {
+      padding: 72px 48px; } }
   .vision::before {
     content: "";
     position: absolute;
