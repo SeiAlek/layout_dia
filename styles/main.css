@@ -1009,7 +1009,7 @@ li {
     -webkit-column-gap: 32px;
        -moz-column-gap: 32px;
             column-gap: 32px;
-    margin-top: 85px; }
+    margin-top: 80px; }
     @media screen and (max-width: 1024px) {
       .testimonials__list {
         -webkit-column-gap: 16px;
@@ -1019,7 +1019,8 @@ li {
       .testimonials__list {
         grid-template-columns: 1fr;
         row-gap: 32px;
-        justify-items: center; } }
+        justify-items: center;
+        margin-top: 16px; } }
 
 .review {
   display: grid;
@@ -1042,6 +1043,8 @@ li {
     -webkit-box-shadow: 0 3px 2px rgba(0, 0, 0, 0.01), 0 6px 5px rgba(0, 0, 0, 0.01), 0 12px 10px rgba(0, 0, 0, 0.03), 0 22px 18px rgba(0, 0, 0, 0.03);
             box-shadow: 0 3px 2px rgba(0, 0, 0, 0.01), 0 6px 5px rgba(0, 0, 0, 0.01), 0 12px 10px rgba(0, 0, 0, 0.03), 0 22px 18px rgba(0, 0, 0, 0.03); }
     .review:hover img, .review:focus-within img {
+      -webkit-box-shadow: 0 3px 2px rgba(0, 0, 0, 0.01), 0 6px 5px rgba(0, 0, 0, 0.01), 0 12px 10px rgba(0, 0, 0, 0.03), 0 22px 18px rgba(0, 0, 0, 0.03);
+              box-shadow: 0 3px 2px rgba(0, 0, 0, 0.01), 0 6px 5px rgba(0, 0, 0, 0.01), 0 12px 10px rgba(0, 0, 0, 0.03), 0 22px 18px rgba(0, 0, 0, 0.03);
       border-radius: 0;
       -webkit-transform: scale(2);
               transform: scale(2); }
