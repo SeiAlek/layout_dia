@@ -146,6 +146,8 @@ li {
     grid-row: 1;
     height: 32px;
     width: 32px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
     background-color: transparent;
     border: 0;
     cursor: pointer;
@@ -718,21 +720,21 @@ li {
   background-color: #fff;
   border-radius: 16px;
   z-index: 10; }
-  .step__item:nth-child(2n+1) {
+  .step__item:nth-child(odd) {
     -webkit-transform: translateY(140px);
             transform: translateY(140px); }
     @media screen and (max-width: 1024px) {
-      .step__item:nth-child(2n+1) {
+      .step__item:nth-child(odd) {
         -webkit-transform: none;
                 transform: none; } }
   @media screen and (max-width: 1024px) {
-    .step__item:nth-child(2n) {
+    .step__item:nth-child(even) {
       -webkit-transform: translateY(50%);
               transform: translateY(50%); } }
   @media screen and (max-width: 767px) {
-    .step__item:nth-child(2n) {
-      -webkit-transform: none;
-              transform: none; } }
+    .step__item:nth-child(even) {
+      -webkit-transform: translateY(30%);
+              transform: translateY(30%); } }
   @media screen and (max-width: 567px) {
     .step__item {
       width: 70vw; }
