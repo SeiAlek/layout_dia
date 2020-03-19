@@ -601,7 +601,7 @@ li {
     @media screen and (max-width: 1024px) {
       .expertise__item {
         margin-bottom: 0; } }
-    .expertise__item:hover img {
+    .expertise__item:hover img, .expertise__item:focus-within img {
       -webkit-transform: scale(1.2);
               transform: scale(1.2); }
   .expertise__img-wrap {
@@ -994,11 +994,12 @@ li {
   -webkit-box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
           box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
   border-radius: 16px;
+  outline: none;
   overflow: hidden; }
-  .review:hover {
+  .review:hover, .review:focus-within {
     -webkit-box-shadow: 0 3px 2px rgba(0, 0, 0, 0.01), 0 6px 5px rgba(0, 0, 0, 0.01), 0 12px 10px rgba(0, 0, 0, 0.03), 0 22px 18px rgba(0, 0, 0, 0.03);
             box-shadow: 0 3px 2px rgba(0, 0, 0, 0.01), 0 6px 5px rgba(0, 0, 0, 0.01), 0 12px 10px rgba(0, 0, 0, 0.03), 0 22px 18px rgba(0, 0, 0, 0.03); }
-    .review:hover img {
+    .review:hover img, .review:focus-within img {
       border-radius: 16px 16px 0 0;
       -webkit-transform: scale(2);
               transform: scale(2); }
