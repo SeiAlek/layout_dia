@@ -706,8 +706,7 @@ li {
   line-height: 150%; }
   @media screen and (max-width: 567px) {
     .step__list {
-      grid-template-columns: -webkit-max-content;
-      grid-template-columns: max-content;
+      grid-template-columns: 1fr;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
@@ -734,6 +733,13 @@ li {
     .step__item:nth-child(2n) {
       -webkit-transform: none;
               transform: none; } }
+  @media screen and (max-width: 567px) {
+    .step__item {
+      width: 70vw; }
+      .step__item:nth-child(odd) {
+        justify-self: start; }
+      .step__item:nth-child(even) {
+        justify-self: end; } }
 
 .step__link {
   display: grid;
